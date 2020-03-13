@@ -6,50 +6,20 @@
     <link href="CSSstyles/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <label for="myFruit">What's your favorite fruit?</label>
-<input type="text" name="myFruit" id="myFruit" list="mySuggestion">
-<datalist id="mySuggestion">
-  <option>Apple</option>
-  <option>Banana</option>
-  <option>Blackberry</option>
-  <option>Blueberry</option>
-  <option>Lemon</option>
-  <option>Lychee</option>
-  <option>Peach</option>
-  <option>Pear</option>
-</datalist>
+    <div>
+      <label for="customname" id="lbl-customname">请输入自定义的名字：</label>
+      <input id="customname" type="text" placeholder="李雷">
+    </div>
+    <div>
+      <label for="cn" id="lbl-cn">中国</label><input id="cn" type="radio" name="country" value="cn" checked>
+      <label for="us" id="lbl-us">美国</label><input id="us" type="radio" name="country" value="us">
+      <label for="uk" id="lbl-uk">英国</label><input id="uk" type="radio" name="country" value="uk">
+  </div>
+  <div>
+      <button class="randomize">随机生成笑话</button>
+  </div>
 
-<fieldset>
-  <legend>What is your favorite meal?</legend>
-  <ul>
-    <li>
-      <label for="soup">Soup</label>
-      <input type="radio" checked id="soup" name="meal" value="soup">
-    </li>
-    <li>
-      <label for="curry">Curry</label>
-      <input type="radio" id="curry" name="meal" value="curry">
-    </li>
-    <li>
-      <label for="pizza">Pizza</label>
-      <input type="radio" id="pizza" name="meal" value="pizza">
-    </li>
-  </ul>
-</fieldset>
-
-<button type="submit">
-  This a <br><strong>submit button</strong>
-</button>
-
-<div><input type="submit" value="This is a submit button"></div>
-<div><input type="range" name="beans" id="beans" min="0" max="500" step="10"></div>
-<div><input type="datetime-local" name="datetime" id="datetime"></div>
-<div><input type="email" id="email" name="email" multiple></div>
-<div><textarea cols="30" rows="10"></textarea></div>
-<div><input type="range" name="beans" id="beans" min="0" max="500" step="10"></div>
-<div><input type="color" name="color" id="color"></div>
-<div><progress max="100" value="75">75/100</progress></div>
-<div><meter min="0" max="100" value="75" low="33" high="66" optimum="50">75</meter></div>
+  <p class="story"></p>
 
 
     <script src="scripts/main.js" defer></script>
